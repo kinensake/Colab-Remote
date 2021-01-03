@@ -1,6 +1,6 @@
 #! /bin/bash
 read -p "Input superuser password: " supass
-printf "Cho` xiu coi... (Trong luc cho` vao` day mak dua top: https://surviv.io/) " >&2
+printf "Cho\` xiu\' coi... (Trong luc\' cho\` vao\` day mak dua top: https://surviv.io/) " >&2
 {
 sudo useradd -m Aevuive
 sudo adduser Aevuive sudo
