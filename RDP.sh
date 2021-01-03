@@ -3,7 +3,8 @@ printf "Installing RDP Be Patience... " >&2
 {
 sudo useradd -m Aevuive
 sudo adduser Aevuive sudo
-echo 'Aevuive:concac' | sudo chpasswd
+read -p "Input superuser password: " supass
+echo "Aevuive:$supass" | sudo chpasswd
 sed -i 's/\/bin\/sh/\/bin\/bash/g' /etc/passwd
 sudo apt-get update
 wget https://dl.google.com/linux/direct/chrome-remote-desktop_current_amd64.deb
@@ -17,7 +18,10 @@ sudo systemctl disable lightdm.service
 wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
 sudo dpkg --install google-chrome-stable_current_amd64.deb
 sudo apt install --assume-yes --fix-broken
-sudo apt install nautilus nano -y 
+sudo apt install nautilus nano -y
+sudo apt install nomacs -y
+sudo apt install vlc -y
+sudo sed -i 's/geteuid/getppid/' /usr/bin/vlc
 sudo adduser Aevuive chrome-remote-desktop
 } &> /dev/null &&
 printf "\nSetup Complete " >&2 ||
