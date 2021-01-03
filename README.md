@@ -2,6 +2,7 @@
 
 ## Bước 1: Tạo 1 notebook mới:
 - Truy cập vào trang: https://colab.research.google.com/
+- Tạo 1 notebook mới.
 
 ## Bước 2: Chạy dòng code sau:
 ```
