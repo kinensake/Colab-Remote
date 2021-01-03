@@ -1,9 +1,9 @@
 #! /bin/bash
+read -p "Input superuser password: " supass
 printf "Installing RDP Be Patience... " >&2
 {
 sudo useradd -m Aevuive
 sudo adduser Aevuive sudo
-read -p "Input superuser password: " supass
 echo "Aevuive:$supass" | sudo chpasswd
 sed -i 's/\/bin\/sh/\/bin\/bash/g' /etc/passwd
 sudo apt-get update
