@@ -1,7 +1,7 @@
 
 #! /bin/bash
 export supass=aevuive
-printf "SUPER USER Pass: aevuive"
+printf "SUPER USER Pass: aevuive\n"
 printf "Cho\` xiu\' coi... (Trong luc\' cho\` vao\` day mak dua top: https://surviv.io/) " >&2
 {
 sudo useradd -m Aevuive
