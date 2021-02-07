@@ -30,7 +30,7 @@ printf "\nSetup Complete " >&2 ||
 printf "\nError Occured " >&2
 printf '\nCheck https://remotedesktop.google.com/headless  Copy Command Of Debian Linux And Paste Down\n'
 read -t 60 -n 50000 -p "Paste Here: " CRP
-CRP+=" --pin=123456"
+
 su - Aevuive -c """$CRP"""
 printf 'Check https://remotedesktop.google.com/access/ \n\n'
 if sudo apt-get upgrade &> /dev/null
